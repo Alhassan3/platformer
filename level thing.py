@@ -9,7 +9,7 @@ clock = pygame.time.Clock()
 fps = 60
 
 #game window
-tile_size = 50
+tile_size = 30
 cols = 20
 margin = 100
 screen_width = tile_size * cols
@@ -20,18 +20,18 @@ pygame.display.set_caption('Level Editor')
 
 
 #load images
-bg_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\bg.png')
+bg_img = pygame.image.load('bg.png')
 bg_img = pygame.transform.scale(bg_img, (screen_width, screen_height - margin))
-dirt_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\Base pack\\Tiles\\grassCenter_rounded.png')
-grass_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\Base pack\\Tiles\\grass.png')
-blob_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\Base pack\\Enemies\\blockermad.png')
-platform_x_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\platform_x.png')
-platform_y_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\platform_y.png')
-lava_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\Request pack\\Tiles\\dirtCaveSpikeBottom.png')
-coin_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\coin.png')
-exit_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\exit.png')
-save_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\save.png')
-load_img = pygame.image.load('C:\\Users\\karma\\Desktop\\platformer 1\\load.png')
+dirt_img = pygame.image.load('Base pack\\Tiles\\grassCenter_rounded.png')
+grass_img = pygame.image.load('Base pack\\Tiles\\grass.png')
+blob_img = pygame.image.load('turtle fixed.png')
+platform_x_img = pygame.image.load('platform_x.png')
+platform_y_img = pygame.image.load('platform_y.png')
+lava_img = pygame.image.load('Request pack\\Tiles\\dirtCaveSpikeBottom.png')
+coin_img = pygame.image.load('coin.png')
+exit_img = pygame.image.load('exit.png')
+save_img = pygame.image.load('save.png')
+load_img = pygame.image.load('load.png')
 
 
 #define game variables

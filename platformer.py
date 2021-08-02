@@ -8,7 +8,7 @@ pygame.init()
 clock = pygame.time.Clock()
 fps = 60
 
-screen_width = 1100
+screen_width = 1000
 screen_height = 1000
 
 screen = pygame.display.set_mode((screen_width, screen_height))
@@ -174,7 +174,7 @@ class Player():
 
 		#draw player onto screen
 		screen.blit(self.image, self.rect)
-		pygame.draw.rect(screen, (255, 255, 255), self.rect, 2)
+
 
 		return game_over
 
@@ -255,12 +255,13 @@ pygame.mixer.music.play(-1)
 class Enemy(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load('Base pack/Enemies/blockerMad.png')
+		self.image = pygame.image.load('turtle fixed.png')
 		self.rect = self.image.get_rect()
 		self.rect.x = x
 		self.rect.y = y
 		self.move_direction = 1
 		self.move_counter = 0
+
 
 	def update(self):
 		self.rect.x += self.move_direction
